@@ -1,0 +1,536 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of reset section*/
+
+
+/*{
+	outline: 1px solid black;
+}*/
+
+
+
+
+
+
+
+
+.site {
+	max-width: 1400px;
+	margin: 0 auto;
+	
+	/*width: 100%;
+	 /*0 auto;*/
+	background: #E8E8E8;
+	overflow-x: hidden;
+	/*background-position: center;*/
+}
+
+/*.site {
+	text-align: center;
+	width: 1400px;
+	height: 3600px;
+	background: #FFFFFF;
+}*/
+
+.header {
+	position: fixed;
+
+
+	background-image: -webkit-linear-gradient(#CFE6E6, #80BDBD);
+	/*background: #70DBDB; /*#60ADAD;*//*green #A6D101, #60ADAD*/
+	text-align: left;
+	font-size: 40px;
+	font-family: gill sans, helvetica;
+	padding-left: 40px;
+	margin-left: 0px;
+	padding-top: 32px; /*was 30px but white line showed occassionally*/
+	width: 1360px;
+	height: 85px; /*true height add padding and border*/
+	z-index: 15;
+	border-bottom: 15px solid black;
+	text-decoration: none;
+	/*width: 100%;*/
+}
+
+.header span {
+	font-weight: bolder;
+}
+
+.underline {
+	/*position: absolute;*/
+	border: 3px solid black;
+	width: 800px;
+	height: 6px;
+}
+
+.header #email {
+	display: inline;
+	position: absolute;
+	border-radius: 20px;
+	top: 12px;
+	right: 70px;
+	font-family: gill sans, helvetica; /* helvetica - consider adding text width / kerning */
+	/*letter-spacing: 3px;
+	font-size: 30px;*/
+	font-weight: bolder;
+	padding-top: 0px;
+	/*display: center;*/
+	text-align:center;
+	text-decoration: none;
+
+	background-image: -webkit-linear-gradient(#305656, #132323);
+	width: 400px;
+	height: 85px;
+}
+
+.header #email:hover {
+	top: 12px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background-image: -webkit-linear-gradient(#2B4D4D, #132323);
+}
+
+.header #email #line1 {
+	color: #EFF7F7;
+		letter-spacing: 3px;
+	font-size: 30px;
+		text-shadow: -1px 0 black, 0 1px black, -2px 0 black, 0 1px black;
+	text-decoration: none;
+}
+
+.header #email #line2 {
+	position: relative;
+	top: -5px;
+		/*letter-spacing: 3px;*/
+	color: #EFF7F7;
+	font-size: 28px;
+		text-shadow: -1px 0 black, 0 1px black, -2px 0 black, 0 1px black;
+	text-decoration: none;
+}
+
+#headbuttons ul li {
+	text-align: left;
+	font-size: 20px;
+		font-family: gill sans, helvetica;
+	display: inline-block;
+
+	font-weight: bold;
+
+	border: 3px solid black;
+	/*border-bottom: 3px solid black;
+	/*vertical-align: text bottom;*/
+	position: relative;
+	margin-left: -5px;
+	top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+		background-image: -webkit-linear-gradient(#F0EAD6, #C0BBAB);
+	z-index: 20;   /*former colors #D9F0FF, #80CCFF*/
+	/*border-left: 5px solid black;
+	border-right: 5px solid black;*/
+	text-decoration: none;
+}
+
+#headbuttons ul li a {
+	text-decoration: none;
+	color: #46423F;
+}
+
+#headbuttons ul li:hover {
+	border-top: 10px solid black;
+}
+
+/*#homeb{
+		color: #403f5b;
+	display: inline;
+	text-decoration: none;
+	padding: 7px;
+	border: 1px solid black;
+}*/
+
+.space {
+	background: #FFFFFF;
+	max-width: 100%;
+	height: 130px; /*should be same height as header*/
+}
+
+
+#hometext {
+	color: white;
+	position: absolute;
+	margin-left: 125px;
+	top: 220px;
+	z-index: 5;
+	font-size: 100px;
+	font-family: gill sans, helvetica;
+	text-shadow: -1px 0 black, 0 1px black, -2px 0 black, 0 2px black;
+}
+
+#hoverhomes:hover {
+	opacity: 0.8;
+}
+
+
+#hoverhomes {
+	position:absolute;
+	border-radius: 25px;
+	top: 200px;
+	/*left: 70px;*/
+	z-index: 8;
+	background-color: #F0F0F0;
+	/*vertical-align: center;*/
+	padding: 70px;
+	padding-left: 160px;
+	opacity: 0;
+	margin-left: 0 auto;
+	margin-right:0 auto;
+	margin-left: 50px;
+}
+
+#hoverhomes tr th {
+	padding-left: 50px;
+	padding-top: 65px;
+	/*font-style: italic;*/
+}
+
+
+#hoverhomes tr th span {
+	font-style: italic;
+}
+
+/*#hoverhomes tr th .circ {
+	opacity: 0.4; /*for circle arrow*/
+/*}
+*/
+
+.circ { opacity: 0.4;}
+
+
+
+
+
+
+
+
+
+#apttext {
+	color: white;
+	position: absolute;
+	margin-left: 90px;
+	top: 960px;
+	z-index: 5;
+	font-size: 80px;
+	font-family: gill sans, helvetica;
+	text-shadow: -1px 0 black, 0 1px black, -2px 0 black, 0 2px black;
+}
+
+#hoverapts:hover {
+	opacity: 0.8;
+}
+
+#hoverapts {
+	position:absolute;
+	top: 930px;
+	/*left: 55px;*/
+	z-index: 8;
+	background-color: #F0F0F0;
+	border-radius: 25px;
+	padding: 70px;
+	padding-left: 150px;
+	opacity: 0;
+	margin-left: 0 auto;
+	margin-right:0 auto;
+	margin-left: 50px;
+}
+
+#hoverapts tr th {
+	padding-left: 50px;
+	padding-top: 60px;
+}
+
+
+#hoverapts tr th span {
+	font-style: italic;
+}
+
+
+
+
+
+
+
+#teamtext {
+	color: white;
+	position: absolute;
+	margin-left: 95px;
+	top: 1820px;
+	z-index: 5;
+	font-size: 80px;
+	font-family: gill sans, helvetica;
+	text-shadow: -1px 0 black, 0 1px black, -2px 0 black, 0 2px black;
+}
+
+#hoverteam:hover {
+	opacity: 0.8;
+}
+
+#hoverteam {
+	position:absolute;
+	top: 1795px;
+	/*left: 65px;*/
+	z-index: 8;
+	border-radius: 25px;
+	background-color: #F0F0F0;
+	padding: 70px;
+	padding-left: 160px;
+	opacity: 0;
+	margin-left: 0 auto;
+	margin-right:0 auto;
+	margin-left: 50px;
+}
+
+#hoverteam tr th {
+	padding-left: 50px;
+	padding-top: 45px;
+}
+
+#hoverteam tr th span {
+	font-style: italic;
+}
+
+
+
+#testtext {
+	color: white;
+	position: absolute;
+	margin-left: 100px;
+	top: 2875px;
+	z-index: 5;
+	font-size: 80px;
+	font-family: gill sans, helvetica;
+	text-shadow: -1px 0 black, 0 1px black, -2px 0 black, 0 2px black;
+}
+
+#hovertest:hover {
+	opacity: 0.8;
+}
+
+#hovertest {
+	position:absolute;
+	top: 2480px;
+	margin-left: 40px;
+	z-index: 8;	
+	border-radius: 25px;
+	background-color: #F0F0F0;
+	padding: 40px;
+	padding-left: 20px;
+	opacity: 0;
+}
+
+#hovertest tr th {
+	padding-left: 40px;
+	padding-top: 20px;
+}
+
+
+/*dimensions of pictures still need to be refined*/
+/*#govart img{
+	padding-top: 200px; /* equal to header height */
+	/*max-width: 100%
+}*/
+
+#govart {
+	/*position: absolute;*/
+	/*padding-top: 200px;*/
+	max-width: 100%;
+	height: auto;
+}
+
+#contact {
+		/*display: inline;*/
+	position: static;
+	/*position: absolute;*/
+	background-image: -webkit-linear-gradient(#A79F96, #3B332A);
+	/* previously #D1C7BC, #3B332A*/
+	/*background-color: blue;*//*lighter #E8DDD1*/
+	width: 1400px;
+	height: 980px; /*was 780px*/
+	/*top: 3550px; /*based on 630px height of images and 120px height of spaces*/
+	z-index: 10;
+}
+
+#hovercontact {
+	position:absolute;
+	top: 3380px;
+	z-index: 8;
+	padding-left: 100px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, -2px 0 black, 0 2px black;
+}
+
+
+
+
+table {
+	border: none;
+	text-align: left;
+	font-family: arial narrow;
+	font-size: 25px;
+	border-spacing: 50px;
+
+}
+
+table th a {
+	overflow: hidden;
+}
+
+
+th {
+	border:none;
+}
+
+.emailreq input {
+	display: block;
+	margin-left: 40px;
+	/*margin: 0px auto;
+/*	margin-top: 17px;*/
+	width: 370px;
+	height: 25px;
+	font-size: 15px;
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	border: 3px solid #B8B8B8;
+	background-color: #F0F0F0;
+}
+
+.emailreq input:focus {
+	border: 3px solid black;
+}
+
+.project textarea {
+	display: block;
+	margin-left: 40px;
+	/*margin: 0px auto;
+/*	margin-top: 17px; */
+	width: 370px;
+	height: 190px;
+	font-size: 15px;
+	text-align: top;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 3px;
+	border: 3px solid #B8B8B8;
+	background-color: #F0F0F0;
+}
+
+.project textarea:focus {
+	border: 3px solid black;
+}
+
+#hovercontact th #BBB img {
+	padding-left: 20px;
+	padding-top: -5px;
+	vertical-align: bottom;
+}
+
+#hovercontact th h1 {  /*contact heading*/
+	font-size: 40px;
+	font-weight: bolder;
+}
+
+#hovercontact th h6 {   /*copyright*/
+	font-size: 14px;
+}
+
+#hovercontact th h3 {  /*for more info*/
+	font-weight: bolder;
+}
+
+
+#hovercontact th h5 {  /*email and project*/
+	font-size: 20px;
+	padding-bottom: 10px;
+	margin-left: 10px;
+}
+
+#hovercontact th .submit a {
+	/*display: block;*/
+	text-decoration: none;
+	border-radius: 5px;
+		background-image: -webkit-linear-gradient(#707070, #404040 );
+	/*background-color: gray;*/
+	border: 2px solid black;
+	padding-left: 15px;
+	/*padding-right: 100px;*/
+	width: 75px;
+	padding-right: 17px;
+	margin-left: 165px;
+	/*font-weight: bolder;*/
+	color: #F0F0F0;
+}
+
+#hovercontact th .submit a:hover {
+	background-image: -webkit-linear-gradient(#505050, #383838 );
+	border-top: 3px solid black;
+	border-bottom: 4px solid black;
+	top: 3px;
+	color: #909090;
+}
+
+/*table th #BBB {
+	background-image: url('bb.png');
+}*/
+
+table th img {
+	padding-top: 20px;
+}
